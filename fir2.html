@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    .m {
+      border: 1px solid black;
+      width: 500px;
+      height: 520px;
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      background-color:khaki;
+    }
+
+    .c {
+      margin-left: 5px;
+      margin-top: 5px;
+      border: 1px solid black;
+      width: 150px;
+      height: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 20px;
+    }
+    .c:hover {
+        background-color: aquamarine;
+        width: 160px;
+        height: 160px ;
+
+
+
+    }
+    img 
+    {
+        width: 100px;
+        height: 100px;
+        border-radius: 10px;
+    }
+    .tooltip
+    {
+      display: flex;
+      position: relative;
+    }
+    .tooltip .tooltiptext
+    {
+      display: none;
+      position: absolute;
+      width: 130px;
+      font-size: smaller;
+      background-color: darkgrey;
+    
+      border-radius: 6px;
+      left: -140px;
+      top: 60px;
+      word-wrap: break-word;
+
+      opacity: 0;
+      transition: opacity 8s;
+
+
+
+    }
+    .tooltip:hover .tooltiptext{
+
+      display: block;
+      opacity: 0.7;
+    }
+
+
+
+
+
+  </style>
+
+  <body>
+    <div style="display: flex; align-items: center;justify-content: center;">
+        <div class="m">
+      <div class="c tooltip">
+        <img src="https://tse1.mm.bing.net/th?id=OIP.6Qps9fuVa7VQ6wgr7UJrogHaJ4&pid=Api&P=0&h=220" width="100px" height="100px">
+        <div class="tooltiptext">
+        <p >
+          <b>Name: </b>Tony Stark <br>
+          <br>
+          <b>Created By</b>
+          <ul>
+            <li>Stan lee</li>
+            <li> Larry Lieber</li>
+            <li> Don Heck</li>
+            <li>Steve Ditko</li>
+            </ul>
+          </div>
+
+
+
+        </p>
+      </div>
+      <div class="c tooltip">
+        <img src="https://tse3.mm.bing.net/th?id=OIP.5aSkXqmb2I5uchUXX7tOkAHaKA&pid=Api&P=0&h=220" width="100px" height="100px">
+        <div class="tooltiptext" style="left:-120px">
+          <p >
+            <b>Name: </b>Steve Rogers <br>
+            <br>
+            <b>Created By</b>
+            <ul>
+              <li>Stan lee</li>
+              <li> Larry Lieber</li>
+              <li> Don Heck</li>
+              <li>Steve Ditko</li>
+              </ul>
+            </div>
+  
+  
+  
+          </p>
+
+
+
+
+
+      </div>
+      <div class="c  tooltip">
+        <img src="https://tse4.mm.bing.net/th?id=OIP.wN7j8XDTVwidamKtUgYNQAHaEo&pid=Api&P=0&h=220">
+        <div class="tooltiptext" style="left:170px">
+          <p >
+            <b>Name: </b>Bruce Banner <br>
+            <br>
+            <b>Created By</b>
+            <ul>
+              <li>Stan lee</li>
+              <li> Larry Lieber</li>
+              <li> Don Heck</li>
+              <li>Steve Ditko</li>
+              </ul>
+            </div>
+  
+  
+  
+          </p>
+      </div>
+      
+      <div class="c tooltip">
+        <img src="https://tse3.mm.bing.net/th?id=OIP.AquFm1RMTco5LhXOkkF1VgHaHa&pid=Api&P=0&h=220">
+
+        <div class="tooltiptext">
+          <p >
+            <b>Name: </b>Natasha <br>
+            <br>
+            <b>Created By</b>
+            <ul>
+              <li>Stan lee</li>
+              <li> Larry Lieber</li>
+              <li> Don Heck</li>
+              <li>Steve Ditko</li>
+              </ul>
+            </div>
+  
+  
+  
+          </p>
+      </div>
+      <div class="c tooltip">
+        <img src="https://tse2.mm.bing.net/th?id=OIP.x0PolnEGqg6rWOiJ4gj_7wHaKK&pid=Api&P=0&h=220">
+        <div class="tooltiptext">
+          <p >
+            <b>Name: </b>Hawkeye <br>
+            <br>
+            <b>Created By</b>
+            <ul>
+              <li>Stan lee</li>
+              <li> Larry Lieber</li>
+              <li> Don Heck</li>
+              <li>Steve Ditko</li>
+              </ul>
+            </div>
+  
+  
+  
+          </p>
+
+      </div>
+      <div class="c tooltip">
+        <img src="https://tse2.mm.bing.net/th?id=OIP.xH7uHCY-9SoQBORFdAt6JgHaLH&pid=Api&P=0&h=220">
+        <div class="tooltiptext" style="left:170px">
+          <p >
+            <b>Name: </b>Dr Stephen Strange<br>
+            <br>
+            <b>Created By</b>
+            <ul>
+              <li>Stan lee</li>
+              <li> Larry Lieber</li>
+              <li> Don Heck</li>
+              <li>Steve Ditko</li>
+              </ul>
+            </div>
+  
+  
+  
+          </p>
+      
+      </div>
+
+      <div class="c tooltip">
+
+        <img src="https://tse4.mm.bing.net/th?id=OIP.w2fEn9gtVMEiKR3sdUQxLQHaHa&pid=Api&P=0&h=220">
+        <div class="tooltiptext">
+          <p >
+            <b>Name: </b>Peter Parker <br>
+            <br>
+            <b>Created By</b>
+            <ul>
+              <li>Stan lee</li>
+              <li> Larry Lieber</li>
+              <li> Don Heck</li>
+              <li>Steve Ditko</li>
+              </ul>
+            </div>
+  
+  
+  
+          </p>
+     
+     
+     
+      </div>
+      <div class="c tooltip">
+
+        <img src="https://tse3.mm.bing.net/th?id=OIP.UCh8q11nEIP5t6Go06XGPwHaNK&pid=Api&P=0&h=220">
+        <div class="tooltiptext">
+          <p >
+            <b>Name: </b>captain Marvel<br>
+            <br>
+            <b>Created By</b>
+            <ul>
+              <li>Stan lee</li>
+              <li> Larry Lieber</li>
+              <li> Don Heck</li>
+              <li>Steve Ditko</li>
+              </ul>
+            </div>
+  
+  
+  
+          </p>
+     
+      </div>
+      <div class="c tooltip">
+        <img src="https://tse3.mm.bing.net/th?id=OIP.wbNgBivF16YjGqepAN7bygHaE8&pid=Api&P=0&h=220">
+        <div class="tooltiptext" style="left:170px">
+          <p >
+            <b>Name: </b>Bucky Barnes <br>
+            <br>
+            <b>Created By</b>
+            <ul>
+              <li>Stan lee</li>
+              <li> Larry Lieber</li>
+              <li> Don Heck</li>
+              <li>Steve Ditko</li>
+              </ul>
+            </div>
+  
+  
+  
+          </p>
+      
+      </div>
+    </div>
+    </div>
+  </body>
+</html>
