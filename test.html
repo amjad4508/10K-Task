@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+<style>
+.s:checked ~ p{
+  transform:none;
+}
+.b:checked ~ p{
+  transform:rotate(10deg);
+
+}
+.c:checked ~ p{
+  transform:rotate(45deg);
+}
+.d:checked ~ p{
+  transform:rotateX(45deg);
+}
+.e:checked ~ p{
+  transform:rotateX(100deg);
+}
+.f:checked ~ p{
+  transform:rotateY(45deg);
+}
+.g:checked ~ p{
+  transform:rotateY(80deg);
+}
+.h:checked ~ p{
+  transform:skew(20deg,20deg);
+}
+
+.i:checked ~ p{
+  transform:skew(30deg,30deg);
+}
+.j:checked ~ p{
+  transform:skewX(30deg);
+}
+.k:checked ~ p{
+  transform:skewX(40deg);
+}
+.l:checked ~ p{
+  transform:skewY(30deg);
+}
+.n:checked ~ p{
+  transform:skewY(40deg);
+}
+.o:checked ~ p{
+  transform: translate(20px,10px);
+}
+.p:checked ~ p{
+  transform: translate(20px,20px);
+}
+
+.q:checked ~ p{
+  transform: scale(2,2);
+}
+
+.r:checked ~ p{
+  transform: scale(2,3);
+}
+
+
+.t:checked ~ p{
+  transform: matrix(0.866,0.7,-0.8,0.866,0,0);;
+}
+.u:checked ~ p{
+  transform: matrix(0.586,0.8,-0.8,0.586,0,0);
+}
+
+.w:checked ~ p{
+  transform: matrix(0.586,0.8,-0.8,0.586,0,0);
+}
+.x:checked ~ p{
+  transform: matrix(0.586,0.8,-0.8,0.586,40,30);
+}
+
+
+input:checked+.tt{
+  opacity: 1;
+}
+
+.tt
+{
+  display: inline-block;
+   background-color: darkslategray;  
+  width: 350px;
+  font-size: large;
+  opacity: 0.5;
+}
+.m
+{
+  
+  border: 2px solid black;
+  padding: 50px;
+  margin-top: -8px;
+  background-color: gray;
+  
+}
+.v
+{
+  height: 9px;
+  visibility: hidden;
+}
+
+  </style>
+</head>
+<body style="padding:8px" >
+  <p style="font-size: larger;">Demo of the different values of the transform property.</p>
+  <p style="font-size: small;">Click the property values below to see the result:</p>
+
+  <div class="m">
+
+  <input type="radio" class="s" name="a" ><span class="tt">transform:none </span><br>
+  <div class="v">ndsdnk</div>
+  <input type="radio" name="a" class="b" ><span class="tt">transform: rotate(10deg); </span><br>
+  <div class="v">ndsdnk</div>
+  <input type="radio" name="a"  class="c"><span class="tt">transform: rotate(45deg);</span><br>
+  <div class="v">ndsdnk</div>
+  <input type="radio"  name="a" class="d"><span class="tt">transform: rotateX(45deg);</span><br>
+  <div class="v">ndsdnk</div>
+  <input type="radio"  name="a" class="e"><span class="tt">transform: rotateX(100deg);</span><br>
+  <div class="v">ndsdnk</div>
+  <input type="radio"  name="a" class="f"><span class="tt">transform: rotateY(45deg); </span><br>
+  <div class="v">ndsdnk</div>
+  <input type="radio"  name="a" class="g"><span class="tt">transform: rotateY(80deg); </span><br>
+  <div class="v">ndsdnk</div>
+  <input type="radio"  name="a" class="h"><span class="tt">transform: skew(20deg,20deg); </span><br>
+  <div class="v">ndsdnk</div>
+  <input type="radio" name="a" class="i"><span class="tt">transform: skew(30deg,30deg); </span><br>
+  <div class="v">ndsdnk</div>
+  <input type="radio"  name="a" class="j"><span class="tt">transform: skewX(30deg); </span><br>
+  <div class="v">ndsdnk</div>
+
+
+
+  <input type="radio" class="s" name="a" class="k" ><span class="tt">transform:none </span><br>
+  <div class="v">ndsdnk</div>
+  <input type="radio" name="a" class="l" ><span class="tt">transform: skewX(40deg) </span><br>
+  <div class="v">ndsdnk</div>
+  <input type="radio" name="a"  class="n"><span class="tt">transform: skewY(30deg); </span><br>
+  <div class="v">ndsdnk</div>
+  <input type="radio"  name="a" class="o"><span class="tt">transform: skewY(40deg); </span><br>
+  <div class="v">ndsdnk</div>
+  <input type="radio"  name="a" class="p"><span class="tt">transform: translate(20px,10px); </span><br>
+  <div class="v">ndsdnk</div>
+  <input type="radio"  name="a" class="q"><span class="tt">transform: translate(20px,20px); </span><br>
+  <div class="v">ndsdnk</div>
+  <input type="radio"  name="a" class="r"><span class="tt">transform: scale(2,2); </span><br>
+  <div class="v">ndsdnk</div>
+  <input type="radio"  name="a" class="t"><span class="tt">transform: scale(2,3); </span><br>
+  <div class="v">ndsdnk</div>
+  <input type="radio" name="a" class="u"><span class="tt">transform: matrix(0.866,0.7,-0.8,0.866,0,0); </span><br>
+  <div class="v">ndsdnk</div>
+  <input type="radio"  name="a" class="w"><span class="tt">transform: matrix(0.586,0.8,-0.8,0.586,0,0); </span><br>
+  <div class="v">ndsdnk</div>
+  <input type="radio"  name="a" class="x"><span class="tt">transform: matrix(0.586,0.8,-0.8,0.586,40,30); </span><br>
+
+
+
+<p style="border: 1px solid black;   background-color: skyblue; width: 70px; height: 130px; position: absolute; left: 490px; top: 170px; ">
+  see what different transform values does with this div element
+  <div style="   position: absolute;  border: 1px solid black; width: 590px; height: 608px; left: 480px; top: 150px;">
+  </div>
+
+
+</div>
+
+
+
+</body>
+</html>
