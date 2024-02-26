@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body style="background-color: grey;">
+<!-- payementsuccesslast -->
+<div class="modal fade" id="moddas" style="background-color: rgba(0, 0, 0, 0.667);">
+  <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-body" style="background-color: whitesmoke;border-radius: 10px; display: flex
+      ;flex-direction: column;align-items: center;justify-content: center;align-content: center;">
+        <img src="./greentick.png" style="width: 100px;height: 100px; ">
+        <h5 style="color: red; margin-top: 20px;">Booked succesfully!</h5>
+        <button Class="btn btn-danger okbut" style=" margin-top: 20px;">OK</button>
+      </div>
+    </div>
+    
+  </div>
+<!-- payemntsuccessend -->
+
+<!-- odalpayment -->
+<div class="modal fade" id="modda">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5>Payment</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+        ></button>
+      
+      </div>
+    <div class="modal-body" style="height: 250px;">
+        <div style="display: flex;flex-direction: column;">
+          <div style="display: flex;align-items:flex-start;">
+            <div><h5 style="margin-left: 5%;    color: rgb(26, 26, 26);opacity: 0.5;">Amount/Day</h5></div>
+            <div><h5 style="    color: rgb(26, 26, 26);opacity: 0.5;position: relative;left: 250px" id="apd">$0000</h5></div>
+          </div>
+          <!-- another -->
+          <div style="display: flex;margin-top: 15px;">
+            <div style="width: 120px;"><h5 style="margin-left: 5%;    color: rgb(26, 26, 26);opacity: 0.5;">No.of Days</h5></div>
+            <div><h5 style="    color: rgb(26, 26, 26);opacity: 0.5;position: relative;left: 250px"id="nod">$0000</h5></div>
+          </div>
+          <!-- ens -->
+          <hr>
+          <!-- another -->
+          <div style="display: flex;align-items:flex-start;">
+            <div style="width: 220px;"><h5 style=" margin-left: 3%;   color: rgb(26, 26, 26);opacity: 0.5;">Total Amount</h5></div>
+            <div><h5 style="    color: rgb(26, 26, 26);opacity: 0.5;position: relative;left: 153px" id="ta">$0000</h5></div>
+          </div>
+          <!-- ens -->
+
+        </div>
+        <button Class="btn btn-secondary succe " style="position: relative;top: 36px;">Cancel</button>
+        <button Class="btn btn-success pymnt " style="margin-left: 63%;  ">Proceed to payment</button>
+      
+  </div>
+</div>
+    
+  </div>
+</div>
+
+<!-- odalpayemnt end -->
+
+
+
+
+    <!-- ,odal -->
+    <div class="modal fade" id="modd" style="background-color: rgba(0, 0, 0, 0.667);">
+      <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-body" style="background-color: whitesmoke;border-radius: 10px;">
+            <img src="./oops.jpg" style="width: 100px;height: 100px; margin-left: 40%;">
+            <h5 style="margin-left: 25%;color: red; margin-top: 20px;">Sorry ! Car is already booked</h5>
+            <button Class="btn btn-danger  succ" style="margin-left: 45%; margin-top: 20px;">OK</button>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <!-- odalend -->
+
+
+    <div
+      style="
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      "
+    >
+      <div style="display: flex; flex-direction: row; gap: 210px">
+        <div class="card" style="margin-top: 30px;height: 385px; width: 350px;" >
+          <img
+            src="./kevin.jpg"
+            width="350rem"
+            height="200rem"
+            class="carimage"
+          />
+          <div 
+            style="
+              display: flex;
+              flex-direction: column;
+              gap: 30px;
+              width: 350px;
+              align-items: flex-start;
+              justify-content: center;
+              margin-left: 15px;
+              margin-top: 50px;
+            "
+          >
+            <p class="card-text name" style=" margin-top: -30px;">Dodge Charger</p>
+            <p  class="seater" style="font-size: small;margin-top: -30px; ">4 seater Manual</p>
+            <p  class="price" style="color: red;margin-top: -30px;">$1800/day</p>
+            <button class="btn btn-primary rent" style="align-self: center;margin-top: -30px;">Rent Now</button>
+          </div>
+          </div>
+          <div class="card" style="margin-top: 30px;height: 385px;width: 350px;" >
+            <img
+              src="./agerars.jpg"
+              width="350rem"
+              height="200rem"
+              class="carimage"
+            />
+        <div
+          style="
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            width: 350px;
+            align-items: flex-start;
+            justify-content: center;
+            align-content: center;
+            margin-top: 50px;
+            margin-left: 15px;"
+        >
+          <p class="card-text name" style="margin-top: -30px;">Agera RS</p>
+          <p  class="seater" style="font-size: small;margin-top: -30px;">2 seater Manual</p>
+            <p  class="price" style="color: red;margin-top: -30px;">$2500/day</p>
+          <button class="btn btn-primary rent" style="margin-top: -30px;align-self: center;">Rent Now</button>
+        </div>
+      </div>
+      </div>
+      </div>
+   <!-- another column -->
+
+   <div style="display: flex; flex-direction: row; gap: 210px;margin-left: 115px;">
+    <div class="card" style="margin-top: 30px;height: 385px; width: 350px;" >
+      <img
+        src="./koenigsegg-gemera-03.jpg"
+        width="350rem"
+        height="200rem"
+        class="carimage"
+      />
+      <div 
+        style="
+          display: flex;
+          flex-direction: column;
+          gap: 30px;
+          width: 350px;
+          align-items: flex-start;
+          justify-content: center;
+          margin-left: 15px;
+          margin-top: 50px;
+        "
+      >
+        <p class="card-text name" style=" margin-top: -30px;">Gemera</p>
+        <p  class="seater" style="font-size: small;margin-top: -30px;">4 seater Manual</p>
+        <p  class="price" style="color: red;margin-top: -30px;">$5000/day</p>
+        <button class="btn btn-primary rent" style="align-self: center;margin-top: -30px;">Rent Now</button>
+      </div>
+      </div>
+      <div class="card" style="margin-top: 30px;height: 385px;width: 350px;" >
+        <img
+          src="./koenigsegg-jesko-absolut-2.jpg"
+          width="350rem"
+          height="200rem"
+          class="carimage"
+        />
+    <div
+      style="
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        width: 350px;
+        align-items: flex-start;
+        justify-content: center;
+        align-content: center;
+        margin-top: 50px;
+        margin-left: 15px;"
+    >
+      <p class="card-text name" style="margin-top: -30px;">Jesko Absolute</p>
+      <p  class="seater"  style="font-size: small;margin-top: -30px;">2 seater Manual</p>
+        <p  class="price" style="color: red;margin-top: -30px;">$3000/day</p>
+      <button class="btn btn-primary rent" style="margin-top: -30px;align-self: center;">Rent Now</button>
+    </div>
+  </div>
+  </div>
+     <!-- another column -->
+
+     <div style="display: flex; flex-direction: row; gap: 210px;margin-left: 115px;">
+        <div class="card" style="margin-top: 30px;height: 385px; width: 350px;" >
+          <img
+            src="./mr bean.jpg"
+            width="350rem"
+            height="200rem"
+            class="carimage"
+          />
+          <div 
+            style="
+              display: flex;
+              flex-direction: column;
+              gap: 30px;
+              width: 350px;
+              align-items: flex-start;
+              justify-content: center;
+              margin-left: 15px;
+              margin-top: 50px;
+            "
+          >
+            <p class="card-text name" style=" margin-top: -30px;">Ambassdor</p>
+            <p  class="seater" style="font-size: small;margin-top: -30px;">4 seater Manual</p>
+            <p  class="price" style="color: red;margin-top: -30px;">$1584/day</p>
+            <button class="btn btn-primary rent" style="align-self: center;margin-top: -30px;">Rent Now</button>
+          </div>
+          </div>
+          <div class="card" style="margin-top: 30px;height: 385px;width: 350px;" >
+            <img
+              src="./posha.jpg"
+              width="350rem"
+              height="200rem"
+              class="carimage"
+            />
+        <div
+          style="
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            width: 350px;
+            align-items: flex-start;
+            justify-content: center;
+            align-content: center;
+            margin-top: 50px;
+            margin-left: 15px;"
+        >
+          <p class="card-text name" style="margin-top: -30px;">Posha 911 GT-3</p>
+          <p  class="seater" style="font-size: small;margin-top: -30px;">2 seater Manual</p>
+            <p  class="price" style="color: red;margin-top: -30px;">$2800/day</p>
+          <button class="btn btn-primary rent" style="margin-top: -30px;align-self: center;">Rent Now</button>
+        </div>
+      </div>
+      </div>
+<br>
+<br>
+  <!-- last enn -->
+</div>
+
+    </div>
+    <script>
+      var bu = document.getElementsByClassName("rent");
+      var p = document.getElementsByClassName("name");
+      var ps = document.getElementsByClassName("seater");
+      var pr = document.getElementsByClassName("price");
+      bua=document.getElementsByClassName("mod");
+      suc=document.getElementsByClassName("succ");
+      var img=document.getElementsByClassName("carimage");
+      var model=new bootstrap.Modal(document.getElementById("modda"));
+      var paym=document.getElementsByClassName("pymnt");
+      //console.log(paym);
+      var succe=document.getElementsByClassName("succe");
+      var lastmodel=new bootstrap.Modal( document.getElementById("moddas"));
+      var okbut=document.getElementsByClassName("okbut");
+//model values
+var apd=document.getElementById("apd");
+var nod=document.getElementById("nod");
+var ta=document.getElementById("ta");
+//end
+     
+
+      
+      succe[0].addEventListener("click",()=>
+      {
+                    //model.hide(); 
+                    succe[0].setAttribute("data-bs-dismiss","modal");
+      });
+    
+      //checking whle clicking the button
+      for (let i = 0; i < bu.length; i++) {
+        bu[i].addEventListener("click", () => {
+           
+
+          //fetch the drop and pick  values
+          fetch("http://localhost:3000/posts", { method: "GET" })
+            .then((res) => res.json())
+            .then((res) => {
+              id = 0;
+              //checking the value name and drop condition satisfied
+              for (j = 2; j < res.length; j++) {
+                if (p[i].innerText == res[j].name) {
+                  id = res[j].id;
+                }
+              }
+              //now id not equals to 0 and drop pick values must be checked
+
+              respick = new Date(res[1].pick);
+              resdrop=new Date(res[1].drop);
+              console.log(respick)
+              //now get  lambdata and compare using fetch
+              fetch(`http://localhost:3000/posts/${id}`, { method: "GET" })
+                .then((resa) => resa.json())
+                .then((resa) => {
+                  lambdata = new Date(resa.drop);
+                  //respick = new Date(res[1].pick);
+                  modpic=respick.getDate();
+                  if(respick.getDate()==30 || respick.getDate()==31)
+                  {
+                    modpic=0;
+
+                  }
+
+                  if (id != 0 && modpic <= lambdata.getDate()) {
+
+                    var modal = new bootstrap.Modal(document.getElementById('modd'));
+
+                    // Call the modal method to show it
+                    modal.show();
+                  
+
+                    
+
+
+
+                    // testingened
+                    dic = p[i].parentElement;
+                    ps[i].style.opacity="0.3"
+                    pr[i].style.opacity="0.3"
+                    img[i].style.opacity="0.3"
+                    dic.style.opacity = "0.3";
+                    bu[i].disabled = true;
+                  } else {
+                    // amount error;
+                    apd.innerText=pr[i].innerText.slice(0,5);
+                      // datecal
+                      start=Number(respick.getDate());
+                      mo=Number(respick.getMonth());
+                      end=Number(resdrop.getDate());
+                      console.log(start);
+                      console.log(end);
+                      if(start>=29  || start==31)
+                      {
+                        start=0;
+
+                      }
+                      if(start==31 && mo%2!=0)
+                      {
+                        start=1;
+                      }
+                      if(nod.innerText==1)
+                      {
+                        nod.innerText=end-start+" Day";  
+                      }
+                      else
+                      {
+                        nod.innerText=end-start+" Days";
+                      }
+                      ta.innerText="$"+Number(apd.innerText.slice(1))*Number(nod.innerText.slice(0,1));
+                      // enddate
+                    // end
+
+                    
+                    model.show();
+                   
+
+                    paym[0].addEventListener("click",(e)=>
+                    {                      
+
+
+          
+                        obj = {
+                        name: p[i].innerText,
+                        pick: res[1].pick,
+                        drop: res[1].drop,
+                      };
+
+                         fetch("http://localhost:3000/posts", {
+                         method: "POST",
+                         headers: {
+                           "Content-Type": "application/json",
+                         },
+                      body: JSON.stringify(obj),
+                      
+                       }).then((res)=>res.json).then((res)=>{
+                        
+                        model.hide();
+                        window.location.assign("./d.html");
+                                            
+                      
+                      }) //endfetch
+                      // })//okbuttonend
+                       //erren
+                       
+
+                      });//lastbutton
+                      
+
+                    
+                  }//endelse
+                }); //endget fetchlambdad
+            }); //fetch end
+        }); //buttonend
+      } //forend
+
+
+      function fun()
+      {
+        lastmodel.show();
+      }
+      //endcheck
+    </script>
+  </body>
+</html>
