@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
+</head>
+<body style="background-image: url(./backimg.jpg);background-repeat: no-repeat;background-size: cover;">
+<h2 style="margin-left: 43%; position: relative; top: 130px;color:rgba(255, 0, 0, 0.444)">Car Rentals</h2>
+
+<div class="container in" style="margin-top: 15%;   background-color: white; width: 450px; opacity: 0.7;
+ display: flex;gap: 100px; height: 160px; 
+ flex-wrap: wrap;align-items: center;justify-content: center;">
+
+    <div style="display: inline-block; margin-top: 10px;">
+        <p>Select Pickup Date</p>
+        <input type="date" id="pic">
+        <p style="margin-left: 5px;color: red;font-size:small;display: none;" id="valpick">Enter Pickup Date</p>
+
+        </div> 
+
+        <div style="display: inline-block;margin-top: 10px;">
+            <p>Select Drop Date</p>
+            <input type="date" id="dro">
+            <p style="margin-left: 7px;color: red;font-size: small;display: none;" id="valdrop">Enter Drop Date</p>
+            </div> 
+            <p  id="valid" style="color: red;font-size:small;display: none;position: relative;top: -90px;left: 120px;">Enter valid Drop Date</p>
+            <button class="btn btn-primary "id="se" style="position: relative; top: -70px;">Search For Cars</button>
+
+    </div>
+    
+
+    
+    <script>
+        pick=document.getElementById("pic");
+        dro=document.getElementById("dro");
+       
+        valdrop=document.getElementById("valdrop");
+        valpick=document.getElementById("valpick");
+        divv=document.getElementsByClassName("in");
+        valid=document.getElementById("valid");
+
+        searcha=document.getElementById("se");
+        
+        searcha.addEventListener("click",()=>
+        {
+            var picdate=new Date(pick.value);
+            var dropdate=new Date(dro.value);
+
+            if (!pick.value && !dro.value)
+            {
+                pick.style.border = "1px solid red";
+                dro.style.border = "1px solid red";
+                valdrop.style.display="block"
+                valpick.style.display="block"
+                divv[0].style.height="200px"
+            }
+            else if (!pick.value)
+            {
+                pick.style.border = "1px solid red";
+                dro.style.border = "";
+                valdrop.style.display="none";
+                valpick.style.display="block"
+                
+            }
+            else if (!dro.value)
+            {
+                pick.style.border = "";
+                valpick.style.display="none"
+                dro.style.border = "1px solid red";
+                valdrop.style.display="block"
+            }
+            else if(picdate.getDate()>= dropdate.getDate() && picdate.getMonth()>=dropdate.getMonth())
+            {
+                valid.style.display="block";
+                divv[0].style.height="220px";
+                searcha.style.left="-105px";
+                searcha.style.top="-40px";
+                valpick.style.display="none"
+                valdrop.style.display="none"
+                pick.style.border=""
+                drop.style.border=""
+            }
+            else
+            {
+                searcha.style.top="-70px";
+                searcha.style.left="";
+                pick.style.border=""
+                valpick.style.display="none"
+                valid.style.display="none"
+                divv[0].style.height="160px"
+
+                        var obj={
+                            pick: pick.value,
+                            drop:dro.value
+                            }
+
+                    fetch(("http://localhost:3000/posts/2"),{
+                        method:"PATCH",headers:{
+                        "Content-Type":"application/json"
+                    },
+                    body:JSON.stringify(obj)
+                });
+
+
+                window.open("./display.html");
+            }
+        })
+
+
+
+
+    </script>
+</body>
+</html>
