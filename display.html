@@ -303,7 +303,7 @@ var ta=document.getElementById("ta");
            
 
           //fetch the drop and pick  values
-          fetch("http://localhost:3000/posts", { method: "GET" })
+          fetch("https://test-data-nh3f.onrender.com/posts", { method: "GET" })
             .then((res) => res.json())
             .then((res) => {
               id = 0;
@@ -319,7 +319,7 @@ var ta=document.getElementById("ta");
               resdrop=new Date(res[1].drop);
               console.log(respick)
               //now get  lambdata and compare using fetch
-              fetch(`http://localhost:3000/posts/${id}`, { method: "GET" })
+              fetch(`https://test-data-nh3f.onrender.com/posts/${id}`, { method: "GET" })
                 .then((resa) => resa.json())
                 .then((resa) => {
                   lambdata = new Date(resa.drop);
@@ -395,7 +395,7 @@ var ta=document.getElementById("ta");
                         drop: res[1].drop,
                       };
 
-                         fetch("http://localhost:3000/posts", {
+                         fetch("https://test-data-nh3f.onrender.com/posts", {
                          method: "POST",
                          headers: {
                            "Content-Type": "application/json",
