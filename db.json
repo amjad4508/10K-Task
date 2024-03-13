@@ -1,0 +1,113 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "pick": "2024-03-13",
+      "drop": "2024-03-15",
+      "id": 2
+    },
+    {
+      "name": "Ambassdor",
+      "pick": "2024-03-13",
+      "drop": "2024-03-15",
+      "id": 3
+    },
+    {
+      "name": "Dodge Charger",
+      "pick": "2024-03-13",
+      "drop": "2024-03-15",
+      "id": 4
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    },
+    {
+      "name": "amjad",
+      "pass": "94169416",
+      "test": 0,
+      "id": 2
+    },
+    {
+      "name": "amjads",
+      "pass": "94169416",
+      "test": 0,
+      "id": 3
+    },
+    {
+      "name": "nivas",
+      "pass": "94169416",
+      "test": 0,
+      "id": 4
+    },
+    {
+      "name": "raju",
+      "pass": "12345678",
+      "test": 0,
+      "id": 5
+    },
+    {
+      "name": "abhishek",
+      "pass": "12345678",
+      "test": 0,
+      "id": 6
+    },
+    {
+      "names": "Agera RS",
+      "pick": "2024-03-21",
+      "drop": "2024-03-23",
+      "name": "amjad",
+      "id": 7
+    },
+    {
+      "names": "Ambassdor",
+      "pick": "2024-03-13",
+      "drop": "2024-03-15",
+      "name": "raju",
+      "id": 8
+    },
+    {
+      "names": "Gemera",
+      "pick": "2024-03-13",
+      "drop": "2024-03-15",
+      "name": "raju",
+      "id": 9
+    },
+    {
+      "name": "sony",
+      "pass": "12345678",
+      "test": 0,
+      "id": 10
+    },
+    {
+      "names": "Agera RS",
+      "pick": "2024-03-14",
+      "drop": "2024-03-18",
+      "name": "sony",
+      "id": 11
+    },
+    {
+      "name": "jerry",
+      "pass": "tomjerry",
+      "test": 0,
+      "id": 12
+    },
+    {
+      "names": "Dodge Charger",
+      "pick": "2024-03-13",
+      "drop": "2024-03-15",
+      "name": "jerry",
+      "id": 13
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

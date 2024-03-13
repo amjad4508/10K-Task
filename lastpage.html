@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+            fetch(`https://test-data-nh3f.onrender.com/posts`, { method: "GET" })
+                .then((resa) => resa.json()).then((res)=>{
+                  as=res[res.length-1];
+                  console.log(as);
+                  obj={
+                    names:as.name,
+                    pick:as.pick,
+                    drop:as.drop
+
+                  }
+
+                  fetch(`https://test-data-nh3f.onrender.com/comments`, { method: "GET" })
+                      .then((res) => {
+                       return res.json();
+                        }).then((resa)=>{
+                          as=resa.filter(v=>v.test==1);
+                          obj.name=as[0].name;
+                          
+                          
+                              fetch(`https://test-data-nh3f.onrender.com/comments`, {
+                                method: "POST",
+                                headers: {
+                                "Content-Type": "application/json",
+                                },
+
+                                body: JSON.stringify(obj),
+                      
+                                }).then((res)=>res.json()).then(()=>{
+                                  console.log("success")
+                                  window.location.assign("./d.html");
+
+                                })
+
+                        })
+
+
+                })
+
+    </script>
+</body>
+</html>

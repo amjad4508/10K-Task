@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+     
+  <style>
+
+    #asas
+    {
+      cursor: pointer;
+    }
+    .hoveas
+    {
+      width: 0px;
+       border: 1.5px solid white;
+       transition: width 0.3s;
+       opacity: 0;
+      
+      
+      
+    }
+
+    .services
+    {
+      width: 0px;
+       border: 1.5px solid white;
+       transition: width 0.3s;
+       opacity: 0;
+      
+
+
+    }
+    .contact
+    {
+      width: 0px;
+       border: 1.5px solid white;
+       transition: width 0.3s;
+       opacity: 0;
+      
+
+    }
+    .career
+    {
+      width: 0px;
+       border: 1.5px solid white;
+       transition: width 0.3s;
+       opacity: 0;
+      
+
+    }
+    .work
+    {
+      width: 0px;
+       border: 1.5px solid white;
+       transition: width 0.3s;
+       opacity: 0;
+      
+
+    }
+
+
+
+
+    
+    #asas:hover .hoveas{
+      opacity: 1;
+      width: 60px;
+
+
+    }
+    #asas:hover .services{
+      opacity: 1;
+      width: 55px;
+
+
+    }
+    #asas:hover .contact{
+      opacity: 1;
+      width: 72px;
+
+
+    }
+    #asas:hover .career{
+      opacity: 1;
+      width: 50px;
+
+
+    }
+    #asas:hover .work{
+      opacity: 1;
+      width: 35px;
+
+
+    }
+
+
+p,h5,h1,a{
+color:white;
+}
+a{
+  text-decoration: none;
+}
+
+.h,.c,.ab,.conta
+{
+  opacity:0;
+  border: 1.5px solid white;
+  width: 0px;
+  transition: width 0.4s;
+}
+
+.hove:hover .h{
+  opacity: 1;
+  width: 42px;
+}
+
+.hove:hover .ab{
+  opacity: 1;
+  width: 42px;
+}
+
+.hove:hover .c{
+  opacity: 1;
+  width: 30px;
+}
+.hove:hover .conta{
+  opacity: 1;
+  width:72px;
+}
+
+
+    /* conactus end */
+
+    </style>
+  
+  
+  </head>
+  <body style="overflow-x: hidden;background-color: black; "  >
+
+
+
+    <nav class="navbar">
+      <div class="container-fluid">
+        <a style="color: white;font-size: 40px;"   class="navbar-brand">Car Rentals</a>
+
+          <div style="display: flex;gap: 25px; align-items: center;">
+           
+           
+            <a href="#home" class="hove">Home
+              <div class="h"></div>
+
+            </a>
+            
+            <a href="#cars" class="hove">Cars
+              <div class="c"></div>
+            </a>
+            <a href="#about" class="hove">About
+              <div class="ab"></div>
+            </a>
+            <a href="#con" class="hove">Contact Us
+              <div class="conta"></div>
+            </a>
+            <!-- <ul class="nav">
+              <li class="nav-item">
+                <a class="nav-link " href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#cars">Cars</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#con">Contact us</a>
+                
+              </li>
+            </ul> -->
+
+
+          <button class="btn btn-outline-success login" type="submit"  >Login</button>
+          <!-- <i class="fa fa-user-circle looo"    style="font-size: 50px; color: white;cursor: pointer;"></i> -->
+          <button class="btn btn-outline-success looo" type="submit"  >Logout</button>
+        </div>
+      </div>
+    </nav>
+
+
+<div id="home" style="width: 450px; margin-left:16px ;margin-top:55px ;">
+  <img src="./blackcar-Photoroom.png-Photoroom.png" style="width: 450px;height: 450px;position: absolute;right: 80px; top: 10px;z-index: -1;">
+
+  <p style="color: orange;">Efforteless</p>
+  <h1>Car Rental </h1>
+  <p style="font-size: medium;">A car rental system simplifies the process of renting vehicles for both customers and rental companies, improving efficiency, reliability, and customer satisfaction.</p>
+<button style="background-color: orange; " class="gotocart"> Get Started </button>
+
+</div>
+
+
+
+<!-- cars -->
+
+<div style="margin-top: 55px;margin-left: 16px;" id="cars">
+
+  <h1>Available Branded Cars</h1>
+  <p style="font-size: small;">Branded Cars and Latest Models that are available..</p>
+  <div style="display: flex; flex-direction: column;   align-items: center;justify-content: center;margin-top:55px;">
+
+    <div style="display: flex;align-items: center;justify-content: center;gap: 25px;">
+      <div class="card" style="width: 18rem;">
+        <img src="https://wallpapercave.com/wp/w8nIVBl.jpg" class="card-img-top" alt="...">
+        <div class="card-body" style="background-color: black;">
+          <h5 class="card-title" style="color: white;">FORD</h5>
+          <p class="card-text">The Ford Escape is a compact SUV that offers a comfortable ride and versatile cargo options</p>
+         
+        </div>
+      </div>
+
+
+
+     <div class="card" style="width: 18rem;">
+         <img src="https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg?cs=srgb&dl=road-car-vehicle-170811.jpg&fm=jpg" class="card-img-top" alt="...">
+        <div class="card-body" style="background-color: black;">
+          <h5 class="card-title" style="color: white;">BMW</h5>
+            <p class="card-text">The BMW 3 Series is a compact executive car that has dynamic driving characteristics.</p>
+         
+         </div>
+    </div>
+
+
+
+    <div class="card" style="width: 18rem;">
+      <img src="https://2.bp.blogspot.com/-T_u7AixkhT8/TuXA0QKoMpI/AAAAAAAAFas/BDrVxQK_BLs/s1920/Audi-cars-wallpaper.JPG" class="card-img-top" alt="...">
+      <div class="card-body" style="background-color: black;">
+        <h5 class="card-title" style="color: white;">AUDI</h5>
+        <p class="card-text">The Audi A3 is a compact luxury sedan that offers a perfect balance of performance, comfort, and style.</p>
+      
+      </div>
+    </div>
+
+
+    </div>
+    <button style="margin-top: 15px; background-color: orange;" class="gotocart" >Book Now</button>
+
+  </div>
+
+</div>
+
+
+
+
+  <div  id="about" style="margin-top: 75px;margin-left: 16px;">
+
+    <img src="https://tse2.mm.bing.net/th?id=OIP.WfKrfdhEl4632UntKz0xsQHaE7&pid=Api&P=0&h=220" style="float: left; width: 250px;height: 200px; margin-left: 50px;"/>
+
+    <div style="float: right;margin-right: 80px;">
+    <h1>About Us</h1>
+
+    <p style="margin-top: 30px;">car rental systems play a vital role in facilitating convenient   </p>
+
+    <p>It is a crucial part of the transportation industry</p>
+
+    <button style="background-color: orange; margin-top: 15px;" class="gotocart" >Get Started</button>
+
+      
+    </div>
+
+
+
+  </div>
+
+
+
+
+  <div style="border: 1px solid white; opacity: 0.3; position: relative;  top: 280px;">
+  </div>
+        <!-- contact -->
+          <div  id="con" style="background-color: black; height: 350px; margin-top: 320px">
+
+            <div>
+
+            <p style="color: white; text-align: center; font-size: 20px; position: relative; top: 50px; left: 15px; text-decoration: dashed;"> Car Rental</p>
+            <div style="display: flex; align-items: center; justify-content: center; position: relative; top: 90px; gap: 50px;left:20px;">
+            <a id="asas" style="color: white;">About Us
+              <div  class=" hoveas" ></div>
+            
+            </a> 
+           
+            <a  id="asas"   style="color: white;">Services
+              <div  class=" services" ></div>
+            </a>
+            <a id="asas" style="color: white;">Contact Us
+              <div  class=" contact" ></div>
+            </a>
+
+
+            <a  id="asas"   style="color: white;">Careers
+              <div  class=" career" ></div></a>
+            <a  id="asas" style="color: white;">Work
+              <div  class=" work" ></div></a>
+            </div>
+
+            <div style="display: flex; align-items: center; justify-content: center; gap: 8px; position: relative; top:130px; left: 20px;">
+              <a style="color: white; border: 1px solid white; border-radius: 25px; width: 40px; height: 40px; display: inline-block;  " href="#" class="last"><i class="fa fa-twitter" style="position: relative; left: 11px; top: 7px;"></i></a>
+              <a style="color: white; border: 1px solid white; border-radius: 25px; width: 40px; height: 40px; display: inline-block; " href="#" class="last"><i class="fa fa-facebook" style="position: relative; left: 11px; top: 7px;"></i></a>
+              <a style="color: white; border: 1px solid white; border-radius: 25px; width: 40px; height: 40px; display: inline-block; " href="#" class="last"><i class="fa fa-youtube" style="position: relative; left: 11px; top: 7px;"></i></a>
+              <a style="color: white; border: 1px solid white; border-radius: 25px; width: 40px; height: 40px; display: inline-block; " href="#" class="last"><i class="fa fa-instagram" style="position: relative; left: 11px; top: 7px;"></i></a>
+     
+            </div>
+
+            <div style="border: 1px solid white; opacity: 0.3; position: relative; top: 170px; ">
+              </div>
+              <div style="position: relative; left: 380px; top: 210px;">
+              <span ><b>© Copyright 2022 Car Rental.</b></span> <span> All Rights Reserved.</span>
+            </div>
+
+            
+
+            
+            
+
+          </div>
+
+
+
+
+
+
+
+
+
+
+  </body>
+
+  <script>
+
+
+
+
+var l=document.getElementsByClassName("login");
+var loo=document.getElementsByClassName("looo")
+
+loo[0].addEventListener("click",(e)=>
+{
+  e.preventDefault();
+  var w= JSON.parse( localStorage.getItem("logindata"));
+
+
+       fetch(`https://test-data-nh3f.onrender.com/comments`, { method: "GET" })
+             .then((res) => {
+               return res.json();
+             }).then((res)=>
+             {
+              var as=res.filter(v=>v.test==1 && v.name==w.name)
+             
+              obj = {
+                  name: as[0].name,
+                   pass:as[0].pass,
+                   test: 0,
+                 };
+
+
+                 fetch(`https://test-data-nh3f.onrender.com/comments/${as[0].id}`, {
+                   method: "PATCH",
+                   headers: {
+                     "Content-Type": "application/json",
+                   },
+                   body: JSON.stringify(obj),
+                 }).then(() => { 
+                  localStorage.clear();
+                  window.location.href = "./offcanvas.html";
+                 });
+
+             
+
+             })
+
+})
+
+
+
+
+
+
+
+
+
+var s= JSON.parse( localStorage.getItem("logindata"))
+
+if(!s)//null
+{
+  l[0].style.display="inline";
+  loo[0].style.display="none";
+
+
+}
+else
+{
+  l[0].style.display="none";
+  loo[0].style.display="inline";
+
+
+}
+
+
+
+    var n=document.getElementsByClassName("gotocart");
+    for(let i=0;i<n.length;i++)
+    {
+      n[i].addEventListener("click",()=>
+      {
+        window.open("./book.html")
+
+      })
+    }
+
+    
+    l[0].addEventListener("click",()=>
+    {
+      localStorage.setItem("home",JSON.stringify({h:1}));
+      window.open("./login.html")
+    })
+
+  </script>
+</html>
